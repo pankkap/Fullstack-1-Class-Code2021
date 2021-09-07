@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./images/office4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.menu {
+  background: rgb(50, 50, 50);
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu ul li {
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: arial;
+}
+
+.fa {
+  margin-right: 5px;
+}
+.menu ul li:hover,
+.active {
+  background-color: goldenrod;
+}
+
+.dropdown1 {
+  display: none;
+}
+.menu ul li:hover .dropdown1 {
+  display: block;
+  position: absolute;
+  background-color: rgb(50, 50, 50);
+  margin-top: 15px;
+  margin-left: -30px;
+}
+
+.menu ul li:hover .dropdown1 ul {
+  display: block;
+}
+.menu ul li:hover .dropdown1 ul li {
+  background: transparent;
+  border-bottom: 1px solid goldenrod;
+  width: 150px;
+}
+.menu ul li:hover .dropdown1 ul li a:hover {
+  color: goldenrod;
+}
+
+.dropdown2 {
+  display: none;
+}
+.select:hover .dropdown2 {
+  display: block;
+  position: absolute;
+  background-color: rgb(50, 50, 50);
+  margin-top: -50px;
+  margin-left: 130px;
+}
+.fa-plus {
+  float: right;
+  color: white;
+}

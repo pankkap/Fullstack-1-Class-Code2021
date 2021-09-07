@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        width: 100%;
+        height: 70px;
+        background-color: grey;
+        padding: 0 20px;
+      }
+      ul {
+        float: right;
+        list-style: none;
+      }
+      ul li {
+        display: inline-flex;
+        line-height: 70px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0 20px;
+        text-transform: uppercase;
+        font-family: arial;
+      }
+      ul li a:hover {
+        background-color: orange;
+      }
+      h2 {
+        float: left;
+        line-height: 70px;
+        color: white;
+        text-transform: uppercase;
+        font-family: arial;
+      }
+      .show-btn,
+      .hide-btn {
+        line-height: 70px;
+        color: white;
+        font-size: 30px;
+        display: none;
+      }
+      .show-btn {
+        float: right;
+      }
+      .show-btn:hover,
+      .hide-btn:hover {
+        color: orange;
+      }
+      #check {
+        visibility: hidden;
+      }
+      @media screen and (max-width: 800px) {
+        .show-btn,
+        .hide-btn {
+          display: block;
+        }
+
+        .menu {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          height: 100vh;
+          right: -100%;
+          background-color: grey;
+          line-height: normal;
+          text-align: center;
+          padding: 80px 0;
+          transition: 1s;
+        }
+        #check:checked ~ .menu {
+          right: 0;
+        }
+        .menu li {
+          display: block;
+        }
+        .menu li a {
+          display: block;
+        }
+        .hide-btn {
+          position: absolute;
+          top: 5px;
+          right: 20px;
+        }
+      }
+      .content
+      {
+          width: 100%;
+          margin: 10px;
+          padding: 10px;
+      }
+      .content img
+      {
+          width: 100%;
+          max-width: 700px;
+          display: block;
+          margin: auto;
+          margin-bottom: 20px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+
+  </head>
+  <body>
+    <div class="header">
+      <h2>BETA-LABS</h2>
+      <input type="checkbox" name="" id="check" />
+      <label for="check" class="show-btn"><i class="fa fa-bars"></i></label>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <label for="check" class="hide-btn"
+            ><i class="fa fa-close"></i
+          ></label>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <img src="./Pages/Class12/clement-h-95YRwf6CNw8-unsplash.jpg" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde
+        voluptates aperiam reprehenderit rerum, maiores ducimus reiciendis
+        assumenda similique optio vel, distinctio, minima architecto! Fugit
+        nobis ipsum nesciunt esse corporis libero molestiae error temporibus
+        tempora dolor sapiente earum a sequi sed, cum neque, laboriosam minima.
+        Suscipit quia omnis ut accusamus blanditiis!
+      </p>
+    </div>
+  </body>
+</html>

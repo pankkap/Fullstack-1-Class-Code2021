@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar with Dropdown</title>
+    <link rel="stylesheet" href="class10.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li class="active">
+          <a href="#"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i>About</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-server"></i>Services</a>
+
+          <div class="dropdown1">
+            <ul>
+              <li><a href="#">Recruitment</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">Training</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-edit"></i>Training</a>
+          <div class="dropdown1">
+            <ul>
+              <li><a href="#">Front-End</a></li>
+              <li class="select">
+                <a href="#">Back-End</a>
+                <i class="fa fa-plus"></i>
+                <div class="dropdown2">
+                  <ul>
+                    <li><a href="#">NodeJS</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">Dotnet</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="select">
+                <a href="#">Mobile</a>
+                <i class="fa fa-plus"></i>
+                <div class="dropdown2">
+                  <ul>
+                    <li><a href="#">React native</a></li>
+                    <li><a href="#">Flutter</a></li>
+                    <li><a href="#">Ionic</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-users"></i>Blog</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-phone"></i>Contact</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+/* Inserting additional css file into CSS file */
+@import url("./myNewCSS.css");
+
+p,
+h2 {
+  text-align: justify;
+  color: blue;
+  padding: 10px;
+  font-family: arial;
+}
+/* h2 {
+        text-align: center;
+        background-color: orange;
+        color: green;
+      } */
