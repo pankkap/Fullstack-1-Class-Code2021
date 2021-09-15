@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Tags</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+      }
+
+      table,
+      th,
+      tr,
+      td {
+        border: 1px solid red;
+        padding: 10px;
+        text-align: center;
+      }
+      caption {
+        margin-top: 10px;
+        caption-side: bottom;
+        font-family: arial;
+        color: blue;
+        font-size: 14px;
+      }
+      .mywidth {
+        width: 300px;
+      }
+      thead
+      {
+          background-color: navy;
+          color: white;
+      }
+      tfoot
+      {
+          background-color: skyblue;
+          
+      }
+
+      tbody tr:nth-child(odd)
+      {
+          background-color: grey;
+      }
+      tbody tr:nth-child(even)
+      {
+          background-color: pink;
+      }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <table>
+      <!-- <table border="1" cellpadding="5" cellspacing="10"> -->
+      <!-- <table border="1"> -->
+      <caption>
+        List of Tutorials available
+      </caption>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total Fee</td>
+          <td>45000/-</td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+          <td>JAVA Langauege</td>
+          <td class="mywidth">2 Months</td>
+          <td>15000/-</td>
+        </tr>
+        <tr>
+          <td>C++ Langauege</td>
+          <td class="mywidth">1 Months</td>
+          <!-- <td rowspan="2" class="mywidth">1 Months</td> -->
+          <td>5000/-</td>
+        </tr>
+        <tr>
+          <td>python Langauege</td>
+          <td class="mywidth">3 Months</td>
+          <td>25000/-</td>
+        </tr>
+        <tr>
+          <td>python Langauege</td>
+          <td class="mywidth">3 Months</td>
+          <td>25000/-</td>
+        </tr>
+        <tr>
+          <td>python Langauege</td>
+          <td class="mywidth">3 Months</td>
+          <td>25000/-</td>
+        </tr>
+        <tr>
+          <td>python Langauege</td>
+          <td class="mywidth">3 Months</td>
+          <td>25000/-</td>
+        </tr>
+        <tr>
+          <td>python Langauege</td>
+          <td class="mywidth">3 Months</td>
+          <td>25000/-</td>
+        </tr>
+        <tr>
+          <td>python Langauege</td>
+          <td class="mywidth">3 Months</td>
+          <td>25000/-</td>
+        </tr>
+      </tbody>
+
+      <thead>
+        <tr>
+          <th>Tutorial Name</th>
+          <th class="mywidth">Tutorial Duration</th>
+          <th>Tutorial Fee</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
