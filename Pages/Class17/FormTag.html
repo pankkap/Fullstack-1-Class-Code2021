@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormTag</title>
+    <style>
+      .formEle {
+        margin-bottom: 10px;
+        /* border: 2px solid red; */
+        padding: 20px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="welcome.html" method="GET" autocomplete="off">
+      <div class="formEle">
+        <label for="fname">Enter First Name: </label>
+        <input type="text" name="fname" id="fname" required />
+      </div>
+      <div class="formEle">
+        <label for="pass">Enter Password: </label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          pattern="[A-Z][a-zA-z0-9]*[0-9]*[$#\*]*"
+          title="Enter 1 Uppercase, 1 Numeric and 1 Special Character (#,$.*)"
+          required
+        />
+      </div>
+      <div class="formEle">
+        <input type="checkbox" name="ckk" onclick="showPassword()" />Show
+        Password
+      </div>
+      <div class="formEle">
+        <input type="submit" value="Create Acoount" />
+      </div>
+    </form>
+    <script>
+      function showPassword() {
+        var key = document.getElementById("pass");
+        if (key.type === "password") {
+          key.type = "text";
+        } else {
+          key.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
