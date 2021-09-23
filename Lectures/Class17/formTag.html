@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tag</title>
+  </head>
+  <body>
+    <form action="welcome.html " method="GET" autocomplete="off">
+      <label for="fname">First Name: </label>
+      <input type="text" name="fname" id="fname" required />
+      <br /><br />
+      <label for="pass">Password: </label>
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        required
+        pattern="[A-Z][a-zA-Z0-9]*[0-9][@$#\*]"
+        title="Password consist of 1 Uppercase, 1 Number, 1 Special Character (#,$,@,*)"
+      />
+      <br /><br />
+      <input type="checkbox" name="" id="" onclick="showPassword()" /> Show
+      Password <br /><br />
+      <input type="submit" value="Create" />
+      <input type="reset" value="Clear" />
+    </form>
+    <script>
+      function showPassword() {
+        var key = document.getElementById("pass");
+        if (key.type === "password") {
+          key.type = "text";
+        } else {
+          key.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+      body
+      {
+        background-color: cornsilk;
+        font-family: arial;
+      }
+      .container
+      {
+          width: 450px;
+          background-color: white;
+          margin: 30px auto;
+          padding: 30px;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px rgba(0,0,0,1);
+      }
+
+       input[type="text"] 
+       {
+         border: none;
+        outline: none;
+        border-bottom: 1px solid silver;
+        background-color: cornsilk;
+       }
+       h2
+       {
+           margin-top: -10px;
+           text-align: center;
+           padding: 10px;
+           border-bottom: 1px solid black;
+       }
+     
+ 
