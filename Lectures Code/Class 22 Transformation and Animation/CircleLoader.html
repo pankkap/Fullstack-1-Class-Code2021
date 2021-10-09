@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Loader</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: #8a2be2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .loader {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid rgba(255, 255, 255, 0.3);
+        border-top: 10px solid white;
+        animation: lodder 1.5s infinite linear;
+      }
+      p {
+        font-family: arial;
+        margin-top: 10px;
+        color: white;
+        text-transform: uppercase;
+      }
+      @keyframes lodder {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="loader"></div>
+      <p>loading</p>
+    </div>
+  </body>
+</html>

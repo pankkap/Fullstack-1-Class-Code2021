@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class Selectors-1</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+      }
+
+      .center-container {
+        padding: 20px;
+        background-color: white;
+        width: 500px;
+        margin: auto;
+      }
+
+      button {
+        margin-right: 30px;
+      }
+
+      a:link {
+        background-color: orange;
+        color: green;
+      }
+      a:visited {
+        background-color: pink;
+        color: white;
+      }
+      a:focus {
+        background-color: yellow;
+        color: black;
+      }
+
+      button:disabled {
+        box-shadow: 0px 0px 20px black;
+        display: none;
+      }
+      button:enabled {
+        background-color: skyblue;
+        padding: 20px;
+        color: red;
+      }
+
+      input[type="text"] {
+        width: 200px;
+        transition: 0.3s all;
+      }
+      input[type="text"]:focus {
+        width: 400px;
+        background-color: cornsilk;
+        padding: 20px;
+      }
+      input[type="email"]:focus {
+        padding: 20px;
+        border: 5px solid red;
+      }
+      input[type="radio"]:checked + label {
+        font-weight: bold;
+        color: red;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="center-container">
+      <u>
+        <h2 style="color: red">Input & link related Pseudo Class Selectors</h2>
+      </u>
+      <b>1. Anchor Pseudo-classes</b> <br /><br />
+      <a href="#">Hyperlink Link</a><br /><br /><br />
+      <a href="https://beta-labs.in">New Hyperlink Link</a><br /><br /><br />
+
+      <b>2. Input Selector :enabled and :disabled </b><br /><br />
+      <button type="submit">Save draft</button>
+      <button type="submit" disabled>Save draft</button><br /><br /><br />
+      <b>3. Input Selector :focus</b> <br /><br />
+      <label>Enter Name:</label>
+      <input type="text" /><br /><br /><br />
+      <b>4. Input Selector :required </b><br /><br />
+
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example: jon.doe@example.com"
+        required
+      />
+      <br /><br /><br />
+      <b>5. Input Selector :checked</b><br /><br />
+      <label>Select One of following option:</label>
+      <input type="radio" name="radio" id="chk" checked /><label for="chk"
+        >ok</label
+      >
+      <input type="radio" name="radio" id="chk" /><label for="chk">no</label>
+      <input type="radio" name="radio" id="chk" /><label for="chk">all</label>
+      <input type="radio" name="radio" id="chk" /><label for="chk"
+        >everyone</label
+      ><br /><br /><br />
+      <b>6. Lang pseudo class :lang</b>
+      <p>Without :lang pseudo class</p>
+      <p lang="fr">With :lang pseudo class with the value fr</p>
+    </div>
+  </body>
+</html>

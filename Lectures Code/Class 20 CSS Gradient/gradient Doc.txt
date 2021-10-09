@@ -1,0 +1,30 @@
+https://uigradients.com/#ByDesign
+
+ background-image: linear-gradient(
+      to right, 
+      red, 
+      #f06d06, 
+      rgb(255, 255, 0), 
+      green
+    );
+
+
+
+ background-image: linear-gradient(
+          45deg,
+          #ca4246 16.666%,
+          #e16541 16.666%,
+          #e16541 33.333%,
+          #f18f43 33.333%,
+          #f18f43 50%,
+          #8b9862 50%,
+          #8b9862 66.666%,
+          #476098 66.666%,
+          #476098 83.333%,
+          #a7489b 83.333%
+        );
+background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;

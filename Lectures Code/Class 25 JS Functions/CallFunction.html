@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Call on Button Click</title>
+  </head>
+  <body>
+    <!-- Inline Function call -->
+    <!-- <button id="button" onclick="myFunction()">Click Me</button> -->
+
+    <button id="button"">Click Me</button>
+    <script>
+      // Inline Function call
+      //   function myFunction() {
+      //     document.body.style.backgroundColor = "yellow";
+      //   }
+
+    // Bind Function call on Button Click using Function Expression
+    //   document.getElementById("button").onclick = function () {
+    //     document.body.style.backgroundColor = "pink";
+    //   };
+
+    // Bind Function call on Button Click using Arrow Function 
+    document.getElementById("button").onclick = ()=> {
+        document.body.style.backgroundColor = "orange";
+      };
+    </script>
+  </body>
+</html>
