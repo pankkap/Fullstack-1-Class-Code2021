@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Dom Manipulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">TO DO LIST</h1>
+      <ul>
+        <h1>Beta-Labs JavaScript Tutorial</h1>
+        <li id="one" class="mandatory">Learning the concepts</li>
+        <li id="two" class="mandatory">Practicing the codes</li>
+        <li id="three">Taking quizzes</li>
+        <li id="four">Solving Interview Questions</li>
+      </ul>
+    </div>
+    <script>
+      // Methods to Select an Individual Element Node
+      document.getElementById("header").style.backgroundColor = "blue";
+      document.querySelector("h1").style.color = "white";
+
+      // Methods to Select Multiple Elements
+      var headings = document.getElementsByTagName("h1");
+      console.log(headings);
+      var items = document.getElementsByClassName("mandatory");
+      console.log(items);
+      var LIs = document.querySelectorAll("li");
+      for (let i = 0; i < LIs.length; i++) {
+        LIs[i].style.backgroundColor = "gray";
+        LIs[i].style.color = "yellow";
+        LIs[i].style.marginBottom = "5px";
+        LIs[i].style.padding = "5px";
+      }
+
+      var newEl = document.createElement("p");
+      var newTextNode = document.createTextNode(
+        "This is the new Node to be Inserted"
+      );
+
+      newEl.appendChild(newTextNode);
+      var position = document.getElementById("page");
+      position.appendChild(newEl);
+
+      var removeEl = document.getElementById("header");
+      var parentEl = document.getElementById("page");
+      parentEl.removeChild(removeEl);
+    </script>
+  </body>
+</html>

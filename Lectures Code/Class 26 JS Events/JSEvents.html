@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events</title>
+    <link rel="stylesheet" href="./JSEvents.css" />
+  </head>
+  <body onload="pageLoad()">
+    <div id="container" onmouseover="fun1()" onmouseleave="fun2()">
+      <h1 id="heading">This is an Example of JavaScript Events</h1>
+      <button
+        id="button"
+        onclick="var x = parseInt( prompt('Enter any Number')); var y = parseInt( prompt('Enter any Number')); z = x + y ; alert('Sum of Entered Numbers : '+ z)"
+      >
+        Click Me
+      </button>
+      <input type="text" id="input" onfocus="fun3()" onkeydown="fun4()" />
+    </div>
+
+    <script src="./class26.js"></script>
+  </body>
+</html>
